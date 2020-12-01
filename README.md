@@ -41,3 +41,7 @@ Tests and Assumptions:
 4. These tests test basic elements and can be enhanced to cover more DOM elements, connect to sauceLabs, capture reports via jasmine reporter tools as well as can be hooked up to Jenkins.
 5. There are browser sleeps added at certain points since the browser behaves in an unexpected and unexplainable fashion. For instance, the test scrolls the Summer dress page to bottom on certain ocassions. This can be dug into but is not the result of the code.
 6. The strategy for locators can be reviewed since any text changes on the website would mean modifying that part of the test code too.
+
+Enhancements and Rectifications:
+================================
+1. The tests are sometimes flaky and this is not a result of the code but appears to be something with the browser. In particular, when the Womens summer dresses page is loaded, the browser scrolls to the bottom of that page automatically. I have solved this using browser sleep and scrolling to the top again using javascript executor but it appears that on some ocassions, the page still forcibly scrolls to the bottom. This needs to be investigated.
