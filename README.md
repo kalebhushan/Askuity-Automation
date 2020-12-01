@@ -22,20 +22,20 @@ Install:
 
 Running Tests:
 ===============
-1. Navigate to AskuityCustTest/CustomerShopping directory on command line (or terminal) and spin up a selenium instance using webdriver-manager start
-2. In another cmd or terminal window navigate to the AskuityCustTest/CustomerShopping/testconfig directory and execute the command npm test (refer package.json)
-3. This will run all the spec files mentioned in the protractor config file (AskuityCustTest/CustomerShopping/testconfig/protractor.conf.js)
+1. Navigate to Askuity-Automation/CustomerShopping directory on command line (or terminal) and spin up a selenium instance using webdriver-manager start
+2. In another cmd or terminal window navigate to the Askuity-Automation/CustomerShopping/testconfig directory and execute the command npm test (refer package.json)
+3. This will run all the spec files mentioned in the protractor config file (Askuity-Automation/CustomerShopping/testconfig/protractor.conf.js)
 
 Project directory structure:
 =============================
-1. The directory AskuityCustTest contains all the code used by the automation tests.
-2. The protractor config file is present in the directory AskuityCustTest/CustomerShopping/testconfig. This directory also contains a utility file which contains commonly used information by the tests, like the url of the homepage.
-3. The folder AskuityCustTest/CustomerShopping/tests/pages contains all the locators that will be used by the test grouped by pages they are on.
-4. The actual test spec file is present at AskuityCustTest/CustomerShopping/tests/specs/dressshopspec.js which calls functions present under AskuityCustTest/CustomerShopping/tests/functions. This is where all the test code is written including all expects.
+1. The directory Askuity-Automation contains all the code used by the automation tests.
+2. The protractor config file is present in the directory Askuity-Automation/CustomerShopping/testconfig. This directory also contains a utility file which contains commonly used information by the tests, like the url of the homepage.
+3. The folder Askuity-Automation/CustomerShopping/tests/pages contains all the locators that will be used by the test grouped by pages they are on.
+4. The actual test spec file is present at Askuity-Automation/CustomerShopping/tests/specs/dressshopspec.js which calls functions present under Askuity-Automation/CustomerShopping/tests/functions. This is where all the test code is written including all expects.
 
 Tests and Assumptions:
 =======================
-1. The entire flow is covered in one test spec but has been broken down into multiple functions. Each function file (under AskuityCustTest/CustomerShopping/tests/functions) corresponds to each page in the flow and has an associated page file where all locators on that page are mentioned (under AskuityCustTest/CustomerShopping/tests/pages)
+1. The entire flow is covered in one test spec but has been broken down into multiple functions. Each function file (under Askuity-Automation/CustomerShopping/tests/functions) corresponds to each page in the flow and has an associated page file where all locators on that page are mentioned (under Askuity-Automation/CustomerShopping/tests/pages)
 2. The tests register a random user (uses a logic to generate a fairly random email and password). The user's password and email address are not saved anywhere.
 3. Above approach and so the tests will fail if the website requires the user to validate his/her email address during signup.
 4. These tests test basic elements and can be enhanced to cover more DOM elements, connect to sauceLabs, capture reports via jasmine reporter tools as well as can be hooked up to Jenkins.
